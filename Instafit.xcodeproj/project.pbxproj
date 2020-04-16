@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		506A02BA2448055C0009BD2E /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02B92448055C0009BD2E /* Loading.swift */; };
+		506A02BC244816620009BD2E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02BB244816620009BD2E /* AuthManager.swift */; };
 		50E7E623244657520092D942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E622244657520092D942 /* AppDelegate.swift */; };
 		50E7E625244657520092D942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E624244657520092D942 /* SceneDelegate.swift */; };
-		50E7E627244657520092D942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E626244657520092D942 /* ViewController.swift */; };
-		50E7E62A244657520092D942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7E628244657520092D942 /* Main.storyboard */; };
 		50E7E62D244657520092D942 /* Instafit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E62B244657520092D942 /* Instafit.xcdatamodeld */; };
 		50E7E62F244657530092D942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E7E62E244657530092D942 /* Assets.xcassets */; };
 		50E7E632244657530092D942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7E630244657530092D942 /* LaunchScreen.storyboard */; };
 		50E7E63D244657540092D942 /* InstafitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E63C244657540092D942 /* InstafitTests.swift */; };
 		50E7E648244657540092D942 /* InstafitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E647244657540092D942 /* InstafitUITests.swift */; };
+		50E7E656244657AC0092D942 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E655244657AC0092D942 /* LoginViewController.swift */; };
+		50E7E658244667F20092D942 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E657244667F20092D942 /* Extensions.swift */; };
+		50E7E65A2446A1B30092D942 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6592446A1B30092D942 /* Constants.swift */; };
+		50E7E6612446B7780092D942 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6602446B7780092D942 /* LoginPresenter.swift */; };
+		50E7E6632446B7830092D942 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6622446B7830092D942 /* LoginRouter.swift */; };
+		50E7E6652446B78E0092D942 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6642446B78E0092D942 /* LoginInteractor.swift */; };
+		50E7E6672446B7A40092D942 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6662446B7A40092D942 /* LoginProtocol.swift */; };
+		50E7E6692446B7DB0092D942 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6682446B7DB0092D942 /* LoginWireFrame.swift */; };
+		50E7E66B2446B83B0092D942 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E66A2446B83B0092D942 /* LoginDataManager.swift */; };
+		50E7E66D2446B8490092D942 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E66C2446B8490092D942 /* HomeViewController.swift */; };
+		50E7E66F2446B85A0092D942 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E66E2446B85A0092D942 /* HomePresenter.swift */; };
+		50E7E6712446B86C0092D942 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6702446B86C0092D942 /* HomeInteractor.swift */; };
+		50E7E6732446B87A0092D942 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6722446B87A0092D942 /* HomeRouter.swift */; };
+		50E7E6752446B8840092D942 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6742446B8840092D942 /* HomeProtocol.swift */; };
+		50E7E6772446B8910092D942 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6762446B8910092D942 /* HomeWireFrame.swift */; };
+		50E7E6792446B8A10092D942 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6782446B8A10092D942 /* HomeDataManager.swift */; };
+		50E7E67C2446B8D70092D942 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E67B2446B8D70092D942 /* ShadowView.swift */; };
+		50E7E67E2446B9440092D942 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E67D2446B9440092D942 /* LoginConfigurator.swift */; };
+		50E7E6802446B9580092D942 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E67F2446B9580092D942 /* HomeConfigurator.swift */; };
+		50E7E6822447FB280092D942 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6812447FB280092D942 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		506A02B92448055C0009BD2E /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		506A02BB244816620009BD2E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		50E7E61F244657520092D942 /* Instafit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E7E622244657520092D942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E7E624244657520092D942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50E7E626244657520092D942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50E7E629244657520092D942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50E7E62C244657520092D942 /* Instafit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instafit.xcdatamodel; sourceTree = "<group>"; };
 		50E7E62E244657530092D942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E7E631244657530092D942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +71,26 @@
 		50E7E643244657540092D942 /* InstafitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstafitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E7E647244657540092D942 /* InstafitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafitUITests.swift; sourceTree = "<group>"; };
 		50E7E649244657540092D942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E7E655244657AC0092D942 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		50E7E657244667F20092D942 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		50E7E6592446A1B30092D942 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		50E7E6602446B7780092D942 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		50E7E6622446B7830092D942 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		50E7E6642446B78E0092D942 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		50E7E6662446B7A40092D942 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		50E7E6682446B7DB0092D942 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		50E7E66A2446B83B0092D942 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		50E7E66C2446B8490092D942 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50E7E66E2446B85A0092D942 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		50E7E6702446B86C0092D942 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		50E7E6722446B87A0092D942 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		50E7E6742446B8840092D942 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		50E7E6762446B8910092D942 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		50E7E6782446B8A10092D942 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		50E7E67B2446B8D70092D942 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		50E7E67D2446B9440092D942 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		50E7E67F2446B9580092D942 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		50E7E6812447FB280092D942 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506A02BD244816660009BD2E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				506A02BB244816620009BD2E /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		50E7E616244657520092D942 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +151,8 @@
 			children = (
 				50E7E622244657520092D942 /* AppDelegate.swift */,
 				50E7E624244657520092D942 /* SceneDelegate.swift */,
-				50E7E626244657520092D942 /* ViewController.swift */,
-				50E7E628244657520092D942 /* Main.storyboard */,
 				50E7E62E244657530092D942 /* Assets.xcassets */,
+				50E7E65B2446B72F0092D942 /* Presentation */,
 				50E7E630244657530092D942 /* LaunchScreen.storyboard */,
 				50E7E633244657530092D942 /* Info.plist */,
 				50E7E62B244657520092D942 /* Instafit.xcdatamodeld */,
@@ -129,6 +176,75 @@
 				50E7E649244657540092D942 /* Info.plist */,
 			);
 			path = InstafitUITests;
+			sourceTree = "<group>";
+		};
+		50E7E65B2446B72F0092D942 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				50E7E65D2446B7570092D942 /* Scenes */,
+				50E7E65C2446B7390092D942 /* Common */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		50E7E65C2446B7390092D942 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				506A02BD244816660009BD2E /* Managers */,
+				50E7E67A2446B8C30092D942 /* CustomClass */,
+				50E7E6592446A1B30092D942 /* Constants.swift */,
+				50E7E657244667F20092D942 /* Extensions.swift */,
+				50E7E6812447FB280092D942 /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		50E7E65D2446B7570092D942 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				50E7E65E2446B7610092D942 /* Login */,
+				50E7E65F2446B7670092D942 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		50E7E65E2446B7610092D942 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				50E7E655244657AC0092D942 /* LoginViewController.swift */,
+				50E7E6602446B7780092D942 /* LoginPresenter.swift */,
+				50E7E6622446B7830092D942 /* LoginRouter.swift */,
+				50E7E6642446B78E0092D942 /* LoginInteractor.swift */,
+				50E7E6662446B7A40092D942 /* LoginProtocol.swift */,
+				50E7E6682446B7DB0092D942 /* LoginWireFrame.swift */,
+				50E7E66A2446B83B0092D942 /* LoginDataManager.swift */,
+				50E7E67D2446B9440092D942 /* LoginConfigurator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		50E7E65F2446B7670092D942 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				50E7E66C2446B8490092D942 /* HomeViewController.swift */,
+				50E7E66E2446B85A0092D942 /* HomePresenter.swift */,
+				50E7E6722446B87A0092D942 /* HomeRouter.swift */,
+				50E7E6702446B86C0092D942 /* HomeInteractor.swift */,
+				50E7E6742446B8840092D942 /* HomeProtocol.swift */,
+				50E7E6762446B8910092D942 /* HomeWireFrame.swift */,
+				50E7E6782446B8A10092D942 /* HomeDataManager.swift */,
+				50E7E67F2446B9580092D942 /* HomeConfigurator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		50E7E67A2446B8C30092D942 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				50E7E67B2446B8D70092D942 /* ShadowView.swift */,
+				506A02B92448055C0009BD2E /* Loading.swift */,
+			);
+			path = CustomClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +353,6 @@
 			files = (
 				50E7E632244657530092D942 /* LaunchScreen.storyboard in Resources */,
 				50E7E62F244657530092D942 /* Assets.xcassets in Resources */,
-				50E7E62A244657520092D942 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +377,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E7E627244657520092D942 /* ViewController.swift in Sources */,
+				50E7E67E2446B9440092D942 /* LoginConfigurator.swift in Sources */,
+				50E7E6612446B7780092D942 /* LoginPresenter.swift in Sources */,
 				50E7E623244657520092D942 /* AppDelegate.swift in Sources */,
+				50E7E6712446B86C0092D942 /* HomeInteractor.swift in Sources */,
+				50E7E66F2446B85A0092D942 /* HomePresenter.swift in Sources */,
 				50E7E625244657520092D942 /* SceneDelegate.swift in Sources */,
+				50E7E67C2446B8D70092D942 /* ShadowView.swift in Sources */,
+				50E7E6802446B9580092D942 /* HomeConfigurator.swift in Sources */,
+				50E7E656244657AC0092D942 /* LoginViewController.swift in Sources */,
+				50E7E66D2446B8490092D942 /* HomeViewController.swift in Sources */,
+				50E7E6732446B87A0092D942 /* HomeRouter.swift in Sources */,
+				50E7E6772446B8910092D942 /* HomeWireFrame.swift in Sources */,
+				50E7E6792446B8A10092D942 /* HomeDataManager.swift in Sources */,
+				50E7E6632446B7830092D942 /* LoginRouter.swift in Sources */,
+				50E7E6752446B8840092D942 /* HomeProtocol.swift in Sources */,
+				50E7E6822447FB280092D942 /* Utils.swift in Sources */,
+				50E7E66B2446B83B0092D942 /* LoginDataManager.swift in Sources */,
+				50E7E65A2446A1B30092D942 /* Constants.swift in Sources */,
 				50E7E62D244657520092D942 /* Instafit.xcdatamodeld in Sources */,
+				50E7E6652446B78E0092D942 /* LoginInteractor.swift in Sources */,
+				50E7E658244667F20092D942 /* Extensions.swift in Sources */,
+				50E7E6692446B7DB0092D942 /* LoginWireFrame.swift in Sources */,
+				506A02BA2448055C0009BD2E /* Loading.swift in Sources */,
+				50E7E6672446B7A40092D942 /* LoginProtocol.swift in Sources */,
+				506A02BC244816620009BD2E /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50E7E628244657520092D942 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50E7E629244657520092D942 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50E7E630244657530092D942 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XJS2JRDPF;
 				INFOPLIST_FILE = Instafit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XJS2JRDPF;
 				INFOPLIST_FILE = Instafit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
