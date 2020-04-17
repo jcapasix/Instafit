@@ -21,5 +21,11 @@ class HomeRouter: HomeRouterProtocol {
         AuthManager.shared.login = false
         self.view?.navigationController?.popToRootViewController(animated: true)
     }
+    
+    func routeToItemDetail(item: Item){
+        let view = ItemDetailViewController()
+        view.item = item
+        self.view?.navigationController?.pushViewController(view, animated: true)
+    }
 
 }

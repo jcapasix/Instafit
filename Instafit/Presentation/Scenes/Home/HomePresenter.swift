@@ -26,23 +26,24 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresenterProtocol{
+    
     func getItems() {
         NetworkManager.isReachable { networkManagerInstance in
             self.interactor.getItems()
         }
         
         NetworkManager.isUnreachable { networkManagerInstance in
-            self.showError(message: "No hay conexión a internet.")
+            self.view?.showError(message: "No hay conexión a internet.")
             self.interactor.getItems()
         }
     }
     
     func showItems(items:[Item]){
-//        Loading.shared.stopAnimating {
-//            self.view?.showItems(items: items)
-//        }
         self.view?.showItems(items: items)
-        
+    }
+    
+    func showItemDetail(item: Item){
+        self.router.routeToItemDetail(item: item)
     }
     
     func logout(){

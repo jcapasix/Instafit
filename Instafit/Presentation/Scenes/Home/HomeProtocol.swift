@@ -19,12 +19,14 @@ protocol HomePresenterProtocol: class {
     var interactor: HomeInteractorProtocol { get }
     func getItems()
     func showItems(items:[Item])
+    func showItemDetail(item: Item)
     func logout()
     func showError(message: String)
 }
 
 protocol HomeRouterProtocol {
     func routeToLogin()
+    func routeToItemDetail(item: Item)
 }
 
 protocol HomeConfiguratorProtocol {

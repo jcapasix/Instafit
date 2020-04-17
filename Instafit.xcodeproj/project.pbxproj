@@ -14,6 +14,8 @@
 		5019F70B2448C00D00E2F314 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019F70A2448C00D00E2F314 /* APIClient.swift */; };
 		506A02BA2448055C0009BD2E /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02B92448055C0009BD2E /* Loading.swift */; };
 		506A02BC244816620009BD2E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02BB244816620009BD2E /* AuthManager.swift */; };
+		50A56211244941A900424D98 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A56210244941A900424D98 /* ItemDetailViewController.swift */; };
+		50A56213244943D100424D98 /* CollectionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A56212244943D100424D98 /* CollectionAnimator.swift */; };
 		50DA526124490C00003B45C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA526024490C00003B45C6 /* NetworkManager.swift */; };
 		50E7E623244657520092D942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E622244657520092D942 /* AppDelegate.swift */; };
 		50E7E625244657520092D942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E624244657520092D942 /* SceneDelegate.swift */; };
@@ -72,6 +74,8 @@
 		5019F70A2448C00D00E2F314 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		506A02B92448055C0009BD2E /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		506A02BB244816620009BD2E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		50A56210244941A900424D98 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		50A56212244943D100424D98 /* CollectionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAnimator.swift; sourceTree = "<group>"; };
 		50DA526024490C00003B45C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		50E7E61F244657520092D942 /* Instafit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E7E622244657520092D942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		5019F6F92448A89000E2F314 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				50A56210244941A900424D98 /* ItemDetailViewController.swift */,
 				5019F6FC2448A90500E2F314 /* ItemCollectionViewCell.swift */,
 				5019F6FE2448AF5000E2F314 /* PinterestLayout.swift */,
 			);
@@ -299,6 +304,7 @@
 			children = (
 				50E7E67B2446B8D70092D942 /* ShadowView.swift */,
 				506A02B92448055C0009BD2E /* Loading.swift */,
+				50A56212244943D100424D98 /* CollectionAnimator.swift */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -586,9 +592,11 @@
 				50E7E65A2446A1B30092D942 /* Constants.swift in Sources */,
 				50E7E62D244657520092D942 /* Instafit.xcdatamodeld in Sources */,
 				50E7E6652446B78E0092D942 /* LoginInteractor.swift in Sources */,
+				50A56211244941A900424D98 /* ItemDetailViewController.swift in Sources */,
 				50E7E658244667F20092D942 /* Extensions.swift in Sources */,
 				5019F70B2448C00D00E2F314 /* APIClient.swift in Sources */,
 				50E7E6692446B7DB0092D942 /* LoginWireFrame.swift in Sources */,
+				50A56213244943D100424D98 /* CollectionAnimator.swift in Sources */,
 				506A02BA2448055C0009BD2E /* Loading.swift in Sources */,
 				50E7E6672446B7A40092D942 /* LoginProtocol.swift in Sources */,
 				506A02BC244816620009BD2E /* AuthManager.swift in Sources */,

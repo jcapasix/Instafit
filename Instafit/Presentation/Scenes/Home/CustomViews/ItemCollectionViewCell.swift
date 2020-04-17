@@ -13,7 +13,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
 
     static var identifier: String = "itemCell"
 
-    weak var textLabel: UILabel!
+    var textLabel = UILabel(frame: .zero)
     let imageView = UIImageView(frame: .zero)
     
 
@@ -59,7 +59,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
 
     func reset() {
-        self.textLabel.textAlignment = .center
+        textLabel.textAlignment = .center
         imageView.frame = self.contentView.frame
     }
 }

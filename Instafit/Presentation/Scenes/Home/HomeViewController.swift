@@ -14,14 +14,17 @@ class HomeViewController: UIViewController {
     
     var presenter: HomePresenterProtocol!
     
+    var refreshControl = UIRefreshControl()
+    var index = 0
+    var shownIndexes : [IndexPath] = []
     let itemsCollectionView:UICollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: PinterestLayout())
     
     var items:[Item] = [Item](){
         didSet{
             DispatchQueue.main.async {
+                self.refreshControl.endRefreshing()
                 self.itemsCollectionView.reloadData()
             }
-            
         }
     }
 
@@ -29,7 +32,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()        
         _ = HomeConfigurator.sharedInstance.configure(self)
         initView()
-    
     }
     
     
@@ -71,6 +73,11 @@ class HomeViewController: UIViewController {
         
         itemsCollectionView.contentInset = UIEdgeInsets(top: 15, left: 5, bottom: 80, right: 5)
         
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        itemsCollectionView.addSubview(refreshControl)
+        
         self.view.addSubview(itemsCollectionView)
     }
     
@@ -86,6 +93,10 @@ class HomeViewController: UIViewController {
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
+    
+    @objc func refresh(sender:AnyObject) {
+        presenter.getItems()
+    }
 }
 
 extension HomeViewController: HomeViewProtocol{
@@ -96,7 +107,7 @@ extension HomeViewController: HomeViewProtocol{
     }
     
     func showError(message: String){
-        Utils.showError(viewController: self, title: "Error", message: "Todos los campos son requeridos.")
+        Utils.showError(viewController: self, title: "Error", message: message)
     }
 }
 
@@ -120,9 +131,21 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
       let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
       return CGSize(width: itemSize, height: itemSize)
     }
-
-
-
+    
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if (indexPath.row <= self.items.count){
+            shownIndexes.append(indexPath)
+            let animation = CollectionAnimationFactory.makeFade(duration: 0.4, delayFactor: 0.09)
+            let animator = CollectionAnimator(animation: animation)
+            animator.collectionAnimate(cell: cell, at: indexPath, in: self.itemsCollectionView)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.showItemDetail(item: items[indexPath.row])
+    }
 }
 
 extension HomeViewController: PinterestLayoutDelegate {

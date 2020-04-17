@@ -56,38 +56,16 @@ extension Optional where Wrapped == String {
     }
 }
 
-/// Objects conforming to `CanSaveToDisk` have a save method and provide keys for saving individual objects or a list of objects.
-protocol CanSaveToDisk: Codable {
 
-    /// Provide default logic for encoding this value.
-    static var defaultEncoder: JSONEncoder { get }
 
-    /// This key is used to save the individual object to disk. This works best by using a unique identifier.
-    var storageKeyForObject: String { get }
+//MARK: - UICollectionView extensions
 
-    /// This key is used to save a list of these objects to disk. Any array of items conforming to `CanSaveToDisk` has the option to save as well.
-    static var storageKeyForListofObjects: String { get }
+extension UICollectionView{
 
-    /// Persists the object to disk.
-    ///
-    /// - Throws: useful to throw an error from an encoder or a custom error if you use stage different from user defaults like the keychain
-    func save() throws
-
-}
-
-extension Array where Element: CanSaveToDisk {
-
-    func dataValue() throws -> Data {
-        return try Element.defaultEncoder.encode(self)
+    func isLastVisibleCell(at indexPath: IndexPath) -> Bool {
+        guard let lastIndexPath = indexPathsForVisibleItems.last else {
+            return false
+        }
+        return lastIndexPath == indexPath
     }
-
-    func save() throws {
-        let storage = UserDefaults.standard
-        storage.set(try dataValue(), forKey: Element.storageKeyForListofObjects)
-    }
-
 }
-
-
-
-
