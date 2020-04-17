@@ -7,3 +7,51 @@
 //
 
 import Foundation
+
+class HomePresenter {
+    
+    fileprivate weak var view: HomeViewProtocol?
+    internal let router: HomeRouterProtocol
+    internal let interactor: HomeInteractorProtocol
+    internal let wireFrame: HomeWireFrameProtocol
+        
+    init(view: HomeViewProtocol, router: HomeRouterProtocol, interactor: HomeInteractorProtocol, wireFrame: HomeWireFrameProtocol) {
+        self.view = view
+        self.router = router
+        self.interactor = interactor
+        self.wireFrame = wireFrame
+        self.wireFrame.setUpView()
+    }
+    
+}
+
+extension HomePresenter: HomePresenterProtocol{
+    func getItems() {
+        NetworkManager.isReachable { networkManagerInstance in
+            self.interactor.getItems()
+        }
+        
+        NetworkManager.isUnreachable { networkManagerInstance in
+            self.showError(message: "No hay conexión a internet.")
+            self.interactor.getItems()
+        }
+    }
+    
+    func showItems(items:[Item]){
+//        Loading.shared.stopAnimating {
+//            self.view?.showItems(items: items)
+//        }
+        self.view?.showItems(items: items)
+        
+    }
+    
+    func logout(){
+        router.routeToLogin()
+    }
+    
+    func showError(message: String){
+        Loading.shared.stopAnimating {
+            self.view?.showError(message: message)
+        }
+    }
+}

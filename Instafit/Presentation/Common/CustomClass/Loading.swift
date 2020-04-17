@@ -28,11 +28,12 @@ class Loading{
     }
     
     func stopAnimating(with completion: @escaping (() -> Void)){
-        
-        alert.dismiss(animated: true, completion: {
-            self.loadingIndicator.stopAnimating()
-            completion()
-        })
+        DispatchQueue.main.async {
+            self.alert.dismiss(animated: true, completion: {
+                self.loadingIndicator.stopAnimating()
+                completion()
+            })
+        }
     }
     
     func stopAnimating(){

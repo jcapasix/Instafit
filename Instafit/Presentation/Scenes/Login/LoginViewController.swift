@@ -30,16 +30,18 @@ class LoginViewController: UIViewController {
     
     private func initView(){
         
+        print("initView")
+        
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
         
         loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
-        
-        usernameTextField.text = "jcapasix@gmail.com"
 
+        usernameTextField.text = "jcapasix@gmail.com"
     }
     
+    //MARK: - Actions
+    
     @objc func loginButtonPressed() {
-        
         presenter.loginUser(email: self.usernameTextField.text, password: self.passwordTextField.text)
     }
     

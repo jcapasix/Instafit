@@ -17,4 +17,21 @@ class Utils{
         viewController.present(alertController, animated: true, completion: nil)
     }
     
+    static func showAlert(viewController: UIViewController, title:String, message:String, completion: @escaping (() -> Void)){
+        
+        let alert = UIAlertController(title: title, message: message , preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: { (action) in
+            completion()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+
+        viewController.present(alert, animated: true)
+    }
+    
+    static func getRandomHeight() -> CGFloat{
+        let heights:[CGFloat] = [320.0, 213.5]
+        return heights.randomElement() ?? 0.0
+    }
+
+    
 }

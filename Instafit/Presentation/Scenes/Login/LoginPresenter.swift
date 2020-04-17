@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Reachability
 
 class LoginPresenter {
     
@@ -23,7 +23,7 @@ class LoginPresenter {
         self.wireFrame = wireFrame
         self.wireFrame.setUpView()
         
-
+        
         if AuthManager.shared.login{
             self.router.routeToHome(with: false)
         }

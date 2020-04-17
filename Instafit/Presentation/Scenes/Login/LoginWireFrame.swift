@@ -27,6 +27,11 @@ class LoginWireFrame: LoginWireFrameProtocol {
         let loginButton = viewController.loginButton
         let titleLabel = viewController.titleLabel
         let loginContainerView: ShadowView = viewController.loginContainerView
+        
+        
+        viewController.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        viewController.navigationController?.navigationBar.shadowImage = UIImage()
+        viewController.navigationController?.navigationBar.layoutIfNeeded()
 
         
         topContainerView.translatesAutoresizingMaskIntoConstraints = false
@@ -96,7 +101,7 @@ class LoginWireFrame: LoginWireFrameProtocol {
             topContainerView.rightAnchor.constraint(equalTo: viewController.view.rightAnchor),
             topContainerView.heightAnchor.constraint(equalTo: viewController.view.heightAnchor, multiplier: 0.35),
             
-            titleLabel.topAnchor.constraint(equalTo: topContainerView.topAnchor, constant: 100.0),
+            titleLabel.topAnchor.constraint(equalTo: topContainerView.topAnchor, constant: 80.0),
             titleLabel.widthAnchor.constraint(equalTo: topContainerView.widthAnchor),
             
 

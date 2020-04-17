@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6173D0BE1A7E6690BD50EC /* Pods_Instafit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D487E4091E20CBC3D333896 /* Pods_Instafit.framework */; };
+		5019F6FD2448A90500E2F314 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019F6FC2448A90500E2F314 /* ItemCollectionViewCell.swift */; };
+		5019F6FF2448AF5000E2F314 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019F6FE2448AF5000E2F314 /* PinterestLayout.swift */; };
+		5019F7082448BE0D00E2F314 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019F7072448BE0D00E2F314 /* Item.swift */; };
+		5019F70B2448C00D00E2F314 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5019F70A2448C00D00E2F314 /* APIClient.swift */; };
 		506A02BA2448055C0009BD2E /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02B92448055C0009BD2E /* Loading.swift */; };
 		506A02BC244816620009BD2E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A02BB244816620009BD2E /* AuthManager.swift */; };
+		50DA526124490C00003B45C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA526024490C00003B45C6 /* NetworkManager.swift */; };
 		50E7E623244657520092D942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E622244657520092D942 /* AppDelegate.swift */; };
 		50E7E625244657520092D942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E624244657520092D942 /* SceneDelegate.swift */; };
 		50E7E62D244657520092D942 /* Instafit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E62B244657520092D942 /* Instafit.xcdatamodeld */; };
@@ -36,6 +42,8 @@
 		50E7E67E2446B9440092D942 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E67D2446B9440092D942 /* LoginConfigurator.swift */; };
 		50E7E6802446B9580092D942 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E67F2446B9580092D942 /* HomeConfigurator.swift */; };
 		50E7E6822447FB280092D942 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7E6812447FB280092D942 /* Utils.swift */; };
+		91557A30801580B1E901A748 /* Pods_InstafitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21A6BF37D0A181180CD04AE /* Pods_InstafitTests.framework */; };
+		B2DBA66F2AD406E8A77EDC15 /* Pods_Instafit_InstafitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE8DD2F5533573848969073 /* Pods_Instafit_InstafitUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CFAB72F26EF1321326FC8C5 /* Pods-Instafit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafit.debug.xcconfig"; path = "Target Support Files/Pods-Instafit/Pods-Instafit.debug.xcconfig"; sourceTree = "<group>"; };
+		403146924A012F058B1FF748 /* Pods-InstafitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafitTests.release.xcconfig"; path = "Target Support Files/Pods-InstafitTests/Pods-InstafitTests.release.xcconfig"; sourceTree = "<group>"; };
+		5019F6FC2448A90500E2F314 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		5019F6FE2448AF5000E2F314 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		5019F7072448BE0D00E2F314 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5019F70A2448C00D00E2F314 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		506A02B92448055C0009BD2E /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		506A02BB244816620009BD2E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		50DA526024490C00003B45C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		50E7E61F244657520092D942 /* Instafit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E7E622244657520092D942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E7E624244657520092D942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +106,13 @@
 		50E7E67D2446B9440092D942 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		50E7E67F2446B9580092D942 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		50E7E6812447FB280092D942 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5D487E4091E20CBC3D333896 /* Pods_Instafit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instafit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897047ECFEC15D5523A15FCE /* Pods-Instafit-InstafitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafit-InstafitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instafit-InstafitUITests/Pods-Instafit-InstafitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90C32D762435269D178B85F3 /* Pods-Instafit-InstafitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafit-InstafitUITests.release.xcconfig"; path = "Target Support Files/Pods-Instafit-InstafitUITests/Pods-Instafit-InstafitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A21A6BF37D0A181180CD04AE /* Pods_InstafitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstafitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D451BF37100B0A658F03F484 /* Pods-Instafit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafit.release.xcconfig"; path = "Target Support Files/Pods-Instafit/Pods-Instafit.release.xcconfig"; sourceTree = "<group>"; };
+		DEE8DD2F5533573848969073 /* Pods_Instafit_InstafitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instafit_InstafitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CFFED79AE0296A51829FE8 /* Pods-InstafitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafitTests.debug.xcconfig"; path = "Target Support Files/Pods-InstafitTests/Pods-InstafitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6173D0BE1A7E6690BD50EC /* Pods_Instafit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91557A30801580B1E901A748 /* Pods_InstafitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +136,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2DBA66F2AD406E8A77EDC15 /* Pods_Instafit_InstafitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5019F6F92448A89000E2F314 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5019F6FC2448A90500E2F314 /* ItemCollectionViewCell.swift */,
+				5019F6FE2448AF5000E2F314 /* PinterestLayout.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5019F7002448B22300E2F314 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5019F7072448BE0D00E2F314 /* Item.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5019F7092448BFFF00E2F314 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5019F70A2448C00D00E2F314 /* APIClient.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		506A02BD244816660009BD2E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				506A02BB244816620009BD2E /* AuthManager.swift */,
+				50DA526024490C00003B45C6 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -133,6 +184,8 @@
 				50E7E63B244657540092D942 /* InstafitTests */,
 				50E7E646244657540092D942 /* InstafitUITests */,
 				50E7E620244657520092D942 /* Products */,
+				BC1B4BF0C756E5AC701CD632 /* Pods */,
+				9983A77183483999797DB678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +206,8 @@
 				50E7E624244657520092D942 /* SceneDelegate.swift */,
 				50E7E62E244657530092D942 /* Assets.xcassets */,
 				50E7E65B2446B72F0092D942 /* Presentation */,
+				5019F7002448B22300E2F314 /* Domain */,
+				5019F7092448BFFF00E2F314 /* Data */,
 				50E7E630244657530092D942 /* LaunchScreen.storyboard */,
 				50E7E633244657530092D942 /* Info.plist */,
 				50E7E62B244657520092D942 /* Instafit.xcdatamodeld */,
@@ -234,6 +289,7 @@
 				50E7E6762446B8910092D942 /* HomeWireFrame.swift */,
 				50E7E6782446B8A10092D942 /* HomeDataManager.swift */,
 				50E7E67F2446B9580092D942 /* HomeConfigurator.swift */,
+				5019F6F92448A89000E2F314 /* CustomViews */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -247,6 +303,29 @@
 			path = CustomClass;
 			sourceTree = "<group>";
 		};
+		9983A77183483999797DB678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D487E4091E20CBC3D333896 /* Pods_Instafit.framework */,
+				DEE8DD2F5533573848969073 /* Pods_Instafit_InstafitUITests.framework */,
+				A21A6BF37D0A181180CD04AE /* Pods_InstafitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC1B4BF0C756E5AC701CD632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CFAB72F26EF1321326FC8C5 /* Pods-Instafit.debug.xcconfig */,
+				D451BF37100B0A658F03F484 /* Pods-Instafit.release.xcconfig */,
+				897047ECFEC15D5523A15FCE /* Pods-Instafit-InstafitUITests.debug.xcconfig */,
+				90C32D762435269D178B85F3 /* Pods-Instafit-InstafitUITests.release.xcconfig */,
+				E5CFFED79AE0296A51829FE8 /* Pods-InstafitTests.debug.xcconfig */,
+				403146924A012F058B1FF748 /* Pods-InstafitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E7E64C244657540092D942 /* Build configuration list for PBXNativeTarget "Instafit" */;
 			buildPhases = (
+				68B8DC89B557DE686555D282 /* [CP] Check Pods Manifest.lock */,
 				50E7E61B244657520092D942 /* Sources */,
 				50E7E61C244657520092D942 /* Frameworks */,
 				50E7E61D244657520092D942 /* Resources */,
+				222CFC47CA2D92CFB573B68C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E7E64F244657540092D942 /* Build configuration list for PBXNativeTarget "InstafitTests" */;
 			buildPhases = (
+				567E3ADAEEF178C7F0CA3513 /* [CP] Check Pods Manifest.lock */,
 				50E7E634244657540092D942 /* Sources */,
 				50E7E635244657540092D942 /* Frameworks */,
 				50E7E636244657540092D942 /* Resources */,
@@ -289,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E7E652244657540092D942 /* Build configuration list for PBXNativeTarget "InstafitUITests" */;
 			buildPhases = (
+				4501570E4A1A32614AA21454 /* [CP] Check Pods Manifest.lock */,
 				50E7E63F244657540092D942 /* Sources */,
 				50E7E640244657540092D942 /* Frameworks */,
 				50E7E641244657540092D942 /* Resources */,
+				B9232E98C666A674A261A12D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +456,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		222CFC47CA2D92CFB573B68C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafit/Pods-Instafit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafit/Pods-Instafit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instafit/Pods-Instafit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4501570E4A1A32614AA21454 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instafit-InstafitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567E3ADAEEF178C7F0CA3513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstafitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B8DC89B557DE686555D282 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instafit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9232E98C666A674A261A12D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafit-InstafitUITests/Pods-Instafit-InstafitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafit-InstafitUITests/Pods-Instafit-InstafitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instafit-InstafitUITests/Pods-Instafit-InstafitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50E7E61B244657520092D942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -392,16 +579,21 @@
 				50E7E6792446B8A10092D942 /* HomeDataManager.swift in Sources */,
 				50E7E6632446B7830092D942 /* LoginRouter.swift in Sources */,
 				50E7E6752446B8840092D942 /* HomeProtocol.swift in Sources */,
+				5019F6FF2448AF5000E2F314 /* PinterestLayout.swift in Sources */,
 				50E7E6822447FB280092D942 /* Utils.swift in Sources */,
 				50E7E66B2446B83B0092D942 /* LoginDataManager.swift in Sources */,
+				50DA526124490C00003B45C6 /* NetworkManager.swift in Sources */,
 				50E7E65A2446A1B30092D942 /* Constants.swift in Sources */,
 				50E7E62D244657520092D942 /* Instafit.xcdatamodeld in Sources */,
 				50E7E6652446B78E0092D942 /* LoginInteractor.swift in Sources */,
 				50E7E658244667F20092D942 /* Extensions.swift in Sources */,
+				5019F70B2448C00D00E2F314 /* APIClient.swift in Sources */,
 				50E7E6692446B7DB0092D942 /* LoginWireFrame.swift in Sources */,
 				506A02BA2448055C0009BD2E /* Loading.swift in Sources */,
 				50E7E6672446B7A40092D942 /* LoginProtocol.swift in Sources */,
 				506A02BC244816620009BD2E /* AuthManager.swift in Sources */,
+				5019F6FD2448A90500E2F314 /* ItemCollectionViewCell.swift in Sources */,
+				5019F7082448BE0D00E2F314 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +756,7 @@
 		};
 		50E7E64D244657540092D942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFAB72F26EF1321326FC8C5 /* Pods-Instafit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -582,6 +775,7 @@
 		};
 		50E7E64E244657540092D942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D451BF37100B0A658F03F484 /* Pods-Instafit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +794,7 @@
 		};
 		50E7E650244657540092D942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CFFED79AE0296A51829FE8 /* Pods-InstafitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +816,7 @@
 		};
 		50E7E651244657540092D942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403146924A012F058B1FF748 /* Pods-InstafitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -642,6 +838,7 @@
 		};
 		50E7E653244657540092D942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897047ECFEC15D5523A15FCE /* Pods-Instafit-InstafitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -661,6 +858,7 @@
 		};
 		50E7E654244657540092D942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C32D762435269D178B85F3 /* Pods-Instafit-InstafitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

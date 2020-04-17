@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+class HomeRouter: HomeRouterProtocol {
+    
+    fileprivate weak var view: HomeViewController?
+    
+    init(view: HomeViewController) {
+        self.view = view
+    }
+    
+    func routeToLogin(){
+        AuthManager.shared.login = false
+        self.view?.navigationController?.popToRootViewController(animated: true)
+    }
+
+}

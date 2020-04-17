@@ -8,6 +8,7 @@
 import UIKit
 
 class ShadowView: UIView {
+    
     /// The corner radius of the `ShadowView`, inspectable in Interface Builder
     @IBInspectable var cornerRadius: CGFloat = 5.0 {
         didSet {
@@ -44,7 +45,6 @@ class ShadowView: UIView {
     */
     override func awakeFromNib() {
         super.awakeFromNib()
-
         self.layer.masksToBounds = false
 
         self.updateProperties()
